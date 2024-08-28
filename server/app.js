@@ -8,5 +8,4 @@ app.use(cors());
 
 config({path: "./config/config.env"})
 
-
 app.use("/api", paymentRoute);

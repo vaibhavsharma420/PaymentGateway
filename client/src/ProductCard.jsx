@@ -1,7 +1,7 @@
-import { Button, Image, VStack } from "@chakra-ui/react"
+import { Button, Image, VStack, Text } from "@chakra-ui/react"
 import React from "react";
 
-const Card = ({amount,img, checkoutHandler}) =>{
+const ProductCard = ({amount,img,checkoutHandler}) =>{
     return (
        
             <VStack>
@@ -13,4 +13,4 @@ const Card = ({amount,img, checkoutHandler}) =>{
     )
 }
 
-export default Card;
+export default ProductCard;
