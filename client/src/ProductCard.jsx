@@ -5,12 +5,12 @@ const ProductCard = ({amount,img,checkoutHandler}) =>{
     return (
        
             <VStack>
-                <Image src={img}/>
-                <Text>{amount}</Text>
-                <Button onClick={checkoutHandler}>Buy Now</Button>
+                <Image src={img} boxSize={"64"} objectFit="cover"/>
+                <Text>₹{amount}</Text>
+                <Button onClick={()=>checkoutHandler(amount)}>Buy Now</Button>
             </VStack>
       
     )
 }
 
-export default ProductCard;
+export default ProductCard; 
